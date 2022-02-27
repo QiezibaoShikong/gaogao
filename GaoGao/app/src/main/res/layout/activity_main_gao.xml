@@ -1,37 +1,91 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/main_cyan">
 
-    <RelativeLayout
-        android:id="@+id/rl_notice"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <LinearLayout
+    <!--    <RelativeLayout
+            android:id="@+id/rl_notice"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_height="match_parent">
 
-            <androidx.recyclerview.widget.RecyclerView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
 
-        </LinearLayout>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
 
-        <Button
-            android:id="@+id/btn_add_notice"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_centerHorizontal="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginBottom="10dp"
-            android:enabled="true"
-            android:background="@drawable/selector_add_notice"/>
+            </LinearLayout>
 
-    </RelativeLayout>
+            <Button
+                android:id="@+id/btn_add_notice"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/selector_add_notice"
+                android:clickable="true"/>
 
-</FrameLayout>
+        </RelativeLayout>-->
+    <FrameLayout
+        android:id="@+id/fl_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@color/main_yellow">
+
+        <RadioGroup
+            android:id="@+id/rg_mian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_home"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/main_home"
+                android:textSize="20sp"
+                android:textColor="@color/main_green"
+                android:checked="true"
+                android:button="@null"/>
+
+            <RadioButton
+                android:id="@+id/rb_add_notice"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/selector_add_notice"
+                android:checked="true"
+                android:button="@null"/>
+
+            <RadioButton
+                android:id="@+id/rb_mine"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/main_mine"
+                android:textSize="20sp"
+                android:textColor="@color/main_green"
+                android:checked="true"
+                android:button="@null"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+</RelativeLayout>

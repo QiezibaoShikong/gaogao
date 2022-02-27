@@ -3,6 +3,7 @@ package com.example.gaogao.activity.main;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -10,7 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.gaogao.R;
 
 public class MainGaoActivity extends AppCompatActivity implements View.OnClickListener {
-    private Button btn_add_notice;
+    private TextView rb_add_notice;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -23,12 +24,12 @@ public class MainGaoActivity extends AppCompatActivity implements View.OnClickLi
 
 
     private void initViews() {
-        btn_add_notice = (Button) findViewById(R.id.btn_add_notice);
+        rb_add_notice = (TextView) findViewById(R.id.rb_add_notice);
 
     }
 
     private void initListener() {
-        btn_add_notice.setOnClickListener(this);
+        rb_add_notice.setOnClickListener(this);
 
     }
 
@@ -42,7 +43,7 @@ public class MainGaoActivity extends AppCompatActivity implements View.OnClickLi
     public void onClick(View view) {
         int id = view.getId();
         switch (id){
-            case R.id.btn_add_notice:
+            case R.id.rb_add_notice:
                 break;
         }
 

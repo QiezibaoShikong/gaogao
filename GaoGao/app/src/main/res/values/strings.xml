@@ -15,5 +15,7 @@
     <string name="create_password_please">请输入密码</string>
     <string name="create_password_again_please">请再输入密码</string>
     <string name="create_now">立即创建</string>
+    <string name="main_home">主页</string>
+    <string name="main_mine">我的</string>
 
 </resources>
