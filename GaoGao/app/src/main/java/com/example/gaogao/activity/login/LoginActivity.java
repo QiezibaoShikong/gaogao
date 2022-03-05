@@ -22,7 +22,6 @@ import java.util.Map;
 
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private ImageView iv_back;
     private EditText et_login_number;
     private EditText et_login_password;
     private String uerName,password,spPsw;//获取的用户名，密码，加密密码
@@ -45,7 +44,6 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
     private void initViews() {
 
-        iv_back = (ImageView) findViewById(R.id.iv_back);
         et_login_number = (EditText) findViewById(R.id.et_login_number);
         et_login_password = (EditText) findViewById(R.id.et_login_password);
         tv_login_create = (TextView) findViewById(R.id.tv_login_create);
@@ -56,7 +54,6 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
     private void initListener() {
 
-        iv_back.setOnClickListener(this);
         tv_login_create.setOnClickListener(this);
         tv_login_forget.setOnClickListener(this);
         tv_login.setOnClickListener(this);
@@ -79,9 +76,6 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         String password =et_login_password.getText().toString().trim();
         int id = view.getId();
         switch (id){
-            case R.id.iv_back:
-                finish();
-                break;
             case R.id.tv_login_create:
                 Intent intent = new Intent(this,LoginCreateActivity.class);
                 startActivity(intent);

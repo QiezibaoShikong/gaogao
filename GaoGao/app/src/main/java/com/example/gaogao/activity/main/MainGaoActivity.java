@@ -33,11 +33,9 @@ public class MainGaoActivity extends AppCompatActivity implements View.OnClickLi
 
     }
 
-
     private void initData() {
 
     }
-
 
     @Override
     public void onClick(View view) {
