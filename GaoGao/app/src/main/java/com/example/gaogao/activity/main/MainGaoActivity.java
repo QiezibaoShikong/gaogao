@@ -2,7 +2,7 @@ package com.example.gaogao.activity.main;
 
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.TextView;
 
 import androidx.annotation.Nullable;
@@ -11,7 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.gaogao.R;
 
 public class MainGaoActivity extends AppCompatActivity implements View.OnClickListener {
-    private TextView rb_add_notice;
+    private CheckBox cb_add_notice;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -24,12 +24,12 @@ public class MainGaoActivity extends AppCompatActivity implements View.OnClickLi
 
 
     private void initViews() {
-        rb_add_notice = (TextView) findViewById(R.id.rb_add_notice);
+        cb_add_notice = (CheckBox) findViewById(R.id.cb_add_notice);
 
     }
 
     private void initListener() {
-        rb_add_notice.setOnClickListener(this);
+        cb_add_notice.setOnClickListener(this);
 
     }
 
@@ -41,7 +41,7 @@ public class MainGaoActivity extends AppCompatActivity implements View.OnClickLi
     public void onClick(View view) {
         int id = view.getId();
         switch (id){
-            case R.id.rb_add_notice:
+            case R.id.cb_add_notice:
                 break;
         }
 
