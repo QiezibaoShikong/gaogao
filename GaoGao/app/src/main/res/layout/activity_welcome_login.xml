@@ -11,8 +11,8 @@
         android:gravity="center">
 
         <LinearLayout
-            android:layout_width="350dp"
-            android:layout_height="650dp"
+            android:layout_width="@dimen/sw_350dp"
+            android:layout_height="@dimen/sw_650dp"
             android:orientation="vertical"
             android:gravity="center"
             android:background="@color/main_cyan">
@@ -21,14 +21,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/login_welcome"
-                android:textSize="30sp"
+                android:textSize="@dimen/sw_30sp"
                 android:textColor="@color/main_green"/>
 
             <LinearLayout
                 android:id="@+id/ll_login_now"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="80dp"
+                android:layout_marginTop="@dimen/sw_80dp"
                 android:orientation="horizontal"
                 android:gravity="center_vertical">
 
@@ -36,12 +36,12 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/login_now"
-                    android:textSize="15dp"
+                    android:textSize="@dimen/sw_15sp"
                     android:textColor="@color/main_green"/>
 
                 <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
+                    android:layout_width="@dimen/sw_20dp"
+                    android:layout_height="@dimen/sw_20dp"
                     android:src="@mipmap/arrow_right"
                     android:scaleType="centerCrop"/>
 

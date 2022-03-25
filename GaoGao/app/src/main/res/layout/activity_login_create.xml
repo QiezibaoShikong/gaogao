@@ -14,7 +14,7 @@
         <RelativeLayout
             android:id="@+id/rl_title"
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="@dimen/sw_40dp"
             android:orientation="horizontal"
             android:gravity="center_vertical">
 
@@ -22,7 +22,7 @@
                 android:id="@+id/iv_back"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingVertical="8dp"
+                android:paddingVertical="@dimen/sw_8dp"
                 android:src="@mipmap/chevron_left_white"
                 android:scaleType="fitCenter"/>
 
@@ -33,7 +33,7 @@
                 android:layout_centerInParent="true"
                 android:text="@string/login_create"
                 android:textColor="@color/white"
-                android:textSize="18sp"
+                android:textSize="@dimen/sw_18sp"
                 android:textStyle="bold" />
 
         </RelativeLayout>
@@ -58,8 +58,8 @@
                 android:gravity="center_vertical">
 
                 <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:layout_width="@dimen/sw_30dp"
+                    android:layout_height="@dimen/sw_30dp"
                     app:srcCompat="@mipmap/user"/>
 
                 <EditText
@@ -71,7 +71,7 @@
                     android:ems="10"
                     android:text=""
                     android:maxLength="8"
-                    android:textSize="15sp"
+                    android:textSize="@dimen/sw_15sp"
                     android:textColor="@color/main_green"
                     android:hint="@string/create_name_please"/>
 
@@ -84,8 +84,8 @@
                 android:gravity="center_vertical">
 
                 <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:layout_width="@dimen/sw_30dp"
+                    android:layout_height="@dimen/sw_30dp"
                     app:srcCompat="@mipmap/mobile"/>
 
                 <EditText
@@ -97,7 +97,7 @@
                     android:lines="1"
                     android:ems="10"
                     android:text=""
-                    android:textSize="15sp"
+                    android:textSize="@dimen/sw_15sp"
                     android:textColor="@color/main_green"
                     android:hint="@string/create_number_please"/>
 
@@ -110,8 +110,8 @@
                 android:gravity="center_vertical">
 
                 <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:layout_width="@dimen/sw_30dp"
+                    android:layout_height="@dimen/sw_30dp"
                     app:srcCompat="@mipmap/lock" />
 
                 <EditText
@@ -124,7 +124,7 @@
                     android:lines="1"
                     android:ems="10"
                     android:text=""
-                    android:textSize="15sp"
+                    android:textSize="@dimen/sw_15sp"
                     android:textColor="@color/main_green"
                     android:hint="@string/create_password_please" />
 
@@ -137,8 +137,8 @@
                 android:gravity="center_vertical">
 
                 <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:layout_width="@dimen/sw_30dp"
+                    android:layout_height="@dimen/sw_30dp"
                     app:srcCompat="@mipmap/lock" />
 
                 <EditText
@@ -151,7 +151,7 @@
                     android:lines="1"
                     android:ems="10"
                     android:text=""
-                    android:textSize="15sp"
+                    android:textSize="@dimen/sw_15sp"
                     android:textColor="@color/main_green"
                     android:hint="@string/create_password_again_please" />
 
@@ -167,7 +167,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="性别:"
-                    android:textSize="15sp"
+                    android:textSize="@dimen/sw_15sp"
                     android:textStyle="bold"
                     android:textColor="@color/main_green"/>
 
@@ -178,17 +178,17 @@
 
                     <RadioButton
                         android:id="@+id/rb_create_man"
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:layout_marginLeft="30dp"
+                        android:layout_width="@dimen/sw_30dp"
+                        android:layout_height="@dimen/sw_30dp"
+                        android:layout_marginLeft="@dimen/sw_30dp"
                         android:background="@drawable/selector_sex_man"
                         android:button="@null"/>
 
                     <RadioButton
                         android:id="@+id/rb_create_woman"
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:layout_marginLeft="40dp"
+                        android:layout_width="@dimen/sw_30dp"
+                        android:layout_height="@dimen/sw_30dp"
+                        android:layout_marginLeft="@dimen/sw_40dp"
                         android:background="@drawable/selector_sex_woman"
                         android:button="@null"/>
 
@@ -199,8 +199,8 @@
             <TextView
                 android:id="@+id/tv_create"
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:layout_marginTop="20dp"
+                android:layout_height="@dimen/sw_30dp"
+                android:layout_marginTop="@dimen/sw_20dp"
                 android:background="@drawable/round_ffda5c_30_bg"
                 android:gravity="center"
                 android:text="@string/create"
@@ -212,14 +212,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:layout_marginBottom="20dp"
+            android:layout_marginBottom="@dimen/sw_20dp"
             android:orientation="horizontal"
             android:gravity="center">
 
             <CheckBox
                 android:id="@+id/cb_login_agreement"
-                android:layout_width="20dp"
-                android:layout_height="20dp"
+                android:layout_width="@dimen/sw_20dp"
+                android:layout_height="@dimen/sw_20dp"
                 android:background="@drawable/selector_check_circle"
                 android:button="@null"/>
 
@@ -227,10 +227,10 @@
                 android:id="@+id/textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
+                android:layout_marginLeft="@dimen/sw_5dp"
                 android:text="@string/login_agreement"
                 android:singleLine="true"
-                android:textSize="12sp"/>
+                android:textSize="@dimen/sw_12sp"/>
 
         </LinearLayout>
 

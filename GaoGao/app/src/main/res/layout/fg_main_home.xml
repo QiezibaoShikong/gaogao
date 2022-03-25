@@ -15,7 +15,7 @@
         android:layout_height="match_parent"
         android:gravity="center"
         android:text="@string/main_home"
-        android:textSize="50sp"
+        android:textSize="@dimen/sw_50sp"
         android:textColor="@color/main_yellow"/>
 
 </LinearLayout>
